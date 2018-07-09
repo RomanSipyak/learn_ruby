@@ -40,6 +40,7 @@ describe "some silly block functions" do
   end
 
   describe "repeater" do
+
     it "executes the default block" do
       block_was_executed = false
       repeater do
@@ -47,6 +48,7 @@ describe "some silly block functions" do
       end
       expect(block_was_executed).to eq( true)
     end
+
 
     it "executes the default block 3 times" do
       n = 0
